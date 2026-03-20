@@ -409,7 +409,7 @@ public class Table extends Application {
     public void readCSV() {
         try (Scanner scan = new Scanner(
                 // Reference the CSV file
-                new File("C:\\Users\\Julia\\OneDrive\\Desktop\\ICS4U Final\\ContactsData.csv"))) {
+                new File("ContactsData.csv"))) {
             // Add contacts one at a time
             while (scan.hasNextLine()) {
                 String line = scan.nextLine();
@@ -438,7 +438,7 @@ public class Table extends Application {
     public void writeCSV() {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(
                 // Write to the CSV file
-                "C:\\Users\\Julia\\OneDrive\\Desktop\\ICS4U Final\\ContactsData.csv"))) {
+                "ContactsData.csv"))) {
             // Write data one contact at a time
             for (Person person : data) {
                 // Separate properties with commas
